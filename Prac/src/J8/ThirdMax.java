@@ -18,6 +18,7 @@ public class ThirdMax {
         thirdMax.ifPresent(max -> 
             System.out.println("Third Maximum is: " + max)
         );
+        System.out.println("finally commit");
     }
 }
 
