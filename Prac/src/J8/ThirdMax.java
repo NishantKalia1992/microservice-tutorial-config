@@ -12,11 +12,11 @@ public class ThirdMax {
         Optional<Integer> thirdMax = numbers.stream()
             .distinct()                              // Remove duplicates
             .sorted(Comparator.reverseOrder())       // Sort in descending order
-            .skip(4)                                 // Skip the first two (1st and 2nd max)
+            .skip(2)                                 // Skip the first two (1st and 2nd max)
             .findFirst();                            // Find the 3rd max
 
         thirdMax.ifPresent(max -> 
-            System.out.println("Third Maximum is: " + max)
+            System.out.println("The Third Maximum Value is: " + max)
         );
         System.out.println("finally committing the code");
     }
